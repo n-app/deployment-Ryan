@@ -61,7 +61,7 @@ app.use('/filterListingsFiles/:pathname', function(req, res) {
 
 //Filter Listings Services
 app.use('/filterListings/', function(req, res) {
-  res.redirect(307, 'http://localhost:3004' + req.url)
+  res.redirect(307, 'http://localhost:3004/filterListings' + req.url)
 });
 
 app.listen(3000, () => {
