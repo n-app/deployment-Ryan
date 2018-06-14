@@ -1,1 +1,75 @@
-<!DOCTYPE html> <html lang=en> <head> <meta charset=UTF-16> <title>Document</title> <link type=text/css rel=stylesheet href=/filterListing/test.css> </head> <body> <div id=filterListings></div> <script src=/filterListing/filterListings.js></script> <script type="text/javascript" src="main.js"></script></body> </html> 
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ./node_modules/html-loader/index.js):
+  Error: ENOENT: no such file or directory, open '/Users/ryantsuzaki/code/deployment-Ryan/proxyServer/dist/index.html':
+  Error: ENOENT: no such file or directory, open '/Users/ryantsuzaki/code/deployment-Ryan/proxyServer/dist/index.html'
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [deployment-Ryan]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:243 compile
+    [deployment-Ryan]/[webpack]/lib/Compiler.js:243:11
+  
+  - Compiler.js:500 hooks.afterCompile.callAsync.err
+    [deployment-Ryan]/[webpack]/lib/Compiler.js:500:14
+  
+  
+  - Hook.js:35 AsyncSeriesHook.lazyCompileHook [as _callAsync]
+    [deployment-Ryan]/[tapable]/lib/Hook.js:35:21
+  
+  - Compiler.js:497 compilation.seal.err
+    [deployment-Ryan]/[webpack]/lib/Compiler.js:497:30
+  
+  
+  - Hook.js:35 AsyncSeriesHook.lazyCompileHook [as _callAsync]
+    [deployment-Ryan]/[tapable]/lib/Hook.js:35:21
+  
+  - Compilation.js:986 hooks.optimizeAssets.callAsync.err
+    [deployment-Ryan]/[webpack]/lib/Compilation.js:986:35
+  
+  
+  - Hook.js:35 AsyncSeriesHook.lazyCompileHook [as _callAsync]
+    [deployment-Ryan]/[tapable]/lib/Hook.js:35:21
+  
+  - Compilation.js:977 hooks.optimizeChunkAssets.callAsync.err
+    [deployment-Ryan]/[webpack]/lib/Compilation.js:977:32
+  
+  
+  - Hook.js:35 AsyncSeriesHook.lazyCompileHook [as _callAsync]
+    [deployment-Ryan]/[tapable]/lib/Hook.js:35:21
+  
+  - Compilation.js:972 hooks.additionalAssets.callAsync.err
+    [deployment-Ryan]/[webpack]/lib/Compilation.js:972:36
+  
+  
+  - Hook.js:35 AsyncSeriesHook.lazyCompileHook [as _callAsync]
+    [deployment-Ryan]/[tapable]/lib/Hook.js:35:21
+  
+  - Compilation.js:968 hooks.optimizeTree.callAsync.err
+    [deployment-Ryan]/[webpack]/lib/Compilation.js:968:32
+  
+  
+  - Hook.js:35 AsyncSeriesHook.lazyCompileHook [as _callAsync]
+    [deployment-Ryan]/[tapable]/lib/Hook.js:35:21
+  
+  - Compilation.js:905 Compilation.seal
+    [deployment-Ryan]/[webpack]/lib/Compilation.js:905:27
+  
+  - Compiler.js:494 hooks.make.callAsync.err
+    [deployment-Ryan]/[webpack]/lib/Compiler.js:494:17
+  
+  
+  - Compilation.js:771 _addModuleChain
+    [deployment-Ryan]/[webpack]/lib/Compilation.js:771:12
+  
+  - Compilation.js:710 processModuleDependencies.err
+    [deployment-Ryan]/[webpack]/lib/Compilation.js:710:9
+  
+  - next_tick.js:131 _combinedTickCallback
+    internal/process/next_tick.js:131:7
+  
+  - next_tick.js:180 process._tickCallback
+    internal/process/next_tick.js:180:9
+  
+</pre><script type="text/javascript" src="main.js"></script>

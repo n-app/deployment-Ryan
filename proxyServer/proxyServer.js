@@ -5,20 +5,21 @@ const request = require('request');
 const app = express();
 const port = 3000;
 
-app.use(express.static(path.join(__dirname, './dist')));
+app.use(express.static(path.join(__dirname, './')));
 
-app.get('/filterListing/:pathname', function(req, res) {
-  // console.log(' --------------------', req.params.pathname)
+//Descriptions Server
+app.use('/rooms/:pathname', function(req, res) {
+  res.redirect(307, 'http://localhost:3001/' + req.params.pathname)
+});
 
-  request('http://localhost:3004/' + req.params.pathname, function (error, response, body) {
-      console.log('error:', error); // Print the error if one occurred and handle it
-    
-      if (req.params.pathname[req.params.pathname-2] === 's') {
-        res.setHeader("Content-Type", "text/css"); 
-      }
-      console.log('----------', response)
-      res.send(body)
-    });
+//Reviews Server
+app.use('/reviews/:pathname', function(req, res) {
+  res.redirect(307, 'http://localhost:3003/' + req.params.pathname)
+});
+
+//Filter Listings Server
+app.use('/filterListings/:pathname', function(req, res) {
+  res.redirect(307, 'http://localhost:3004/' + req.params.pathname)
 });
 
 app.listen(3000, () => {
