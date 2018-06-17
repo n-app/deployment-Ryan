@@ -1,6 +1,5 @@
 .main-page-padding {
-  padding: 100px;
-  padding-bottom: 0px;
+  padding: 50px;
   margin: auto;
   margin-bottom: 0px;
   display: flex;
@@ -17,5 +16,5 @@
   left: 900px;
   bottom: 100px;
   margin-left: 150px;
-  margin-bottom: 20px;
+
 }
