@@ -1,20 +1,20 @@
 .main-page-padding {
-  padding: 72px;
-  padding-bottom: 0px;
+  padding: 50px;
+  margin: auto;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #booking {
-  background: rgb(255, 255, 255);
   width:350px;
-  border: 1px solid rgb(219, 219, 219);
-  padding:20px;
-  margin:0px;
-
+  height: 400px;
   position: -webkit-sticky; /* Safari */
   position: sticky;
-
-  bottom:900;
+  top: 100px;
   left: 900px;
-  display: inline-block;
-}
+  bottom: 100px;
+  margin-left: 150px;
 
+}

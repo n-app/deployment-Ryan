@@ -1,9 +1,8 @@
 Html Webpack Plugin:
 <pre>
   Error: Child compilation failed:
-  Module build failed (from ./node_modules/html-loader/index.js):
-  Error: ENOENT: no such file or directory, open '/Users/ryantsuzaki/code/deployment-Ryan/proxyServer/dist/index.html':
-  Error: ENOENT: no such file or directory, open '/Users/ryantsuzaki/code/deployment-Ryan/proxyServer/dist/index.html'
+  Entry module not found: Error: Can't resolve '/Users/ryantsuzaki/code/deployment-Ryan/proxyServer/dist/index.html' in '/Users/ryantsuzaki/code/  deployment-Ryan':
+  Error: Can't resolve '/Users/ryantsuzaki/code/deployment-Ryan/proxyServer/dist/index.html' in '/Users/ryantsuzaki/code/deployment-Ryan'
   
   - compiler.js:79 childCompiler.runAsChild
     [deployment-Ryan]/[html-webpack-plugin]/lib/compiler.js:79:16
@@ -63,13 +62,22 @@ Html Webpack Plugin:
   - Compilation.js:771 _addModuleChain
     [deployment-Ryan]/[webpack]/lib/Compilation.js:771:12
   
-  - Compilation.js:710 processModuleDependencies.err
-    [deployment-Ryan]/[webpack]/lib/Compilation.js:710:9
+  - Compilation.js:650 errorAndCallback.bail.err
+    [deployment-Ryan]/[webpack]/lib/Compilation.js:650:6
   
-  - next_tick.js:131 _combinedTickCallback
-    internal/process/next_tick.js:131:7
+  - Compilation.js:683 moduleFactory.create
+    [deployment-Ryan]/[webpack]/lib/Compilation.js:683:14
   
-  - next_tick.js:180 process._tickCallback
-    internal/process/next_tick.js:180:9
+  - NormalModuleFactory.js:397 factory
+    [deployment-Ryan]/[webpack]/lib/NormalModuleFactory.js:397:22
   
-</pre><script type="text/javascript" src="main.js"></script>
+  - NormalModuleFactory.js:130 resolver
+    [deployment-Ryan]/[webpack]/lib/NormalModuleFactory.js:130:21
+  
+  - NormalModuleFactory.js:224 asyncLib.parallel
+    [deployment-Ryan]/[webpack]/lib/NormalModuleFactory.js:224:22
+  
+  - async.js:2817 
+    [deployment-Ryan]/[neo-async]/async.js:2817:7
+  
+</pre>

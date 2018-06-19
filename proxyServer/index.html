@@ -2,26 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-16">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-  <title>Document</title>
+  <title>AirBnb Clone</title>
   <link type="text/css" rel="stylesheet" href="/bookingFiles/booking.css">
-  <link type="text/css" rel="stylesheet" href="/listingDescriptionFiles/listingDescription.css">
-  <link type="text/css" rel="stylesheet" href="/filterListingsFiles/filterListings.css">
   <link type="text/css" rel="stylesheet" href="/reviewsFiles/reviews.css">
+  <link type="text/css" rel="stylesheet" href="/listingDescriptionFiles/listingDescription.css">
+  <link type="text/css" rel="stylesheet" href="/titleGallery/titleGallery.css">
+  <link type="text/css" rel="stylesheet" href="/filterListingsFiles/filterListings.css">
   <link type="text/css" rel="stylesheet" href="main.css">
 </head>
 
 <body>
-  <div id="booking"></div>
+  <div id="titleSearch"></div>
+  <div id="titleGallery"></div>
   <div class="main-page-padding">
-    <div id="listingDescription"></div>
+    
+    <div>
+      <div id="listingDescription"></div>
+      <div id="reviews"></div>
+    </div>
+
+    <div>
+      <div id="booking"></div>
+    </div>
   </div>
-  <div class="main-page-padding">
-    <div id="reviews"></div>
-  </div>
+
   <div id="filterListings"></div>
 
+  <script src="/titleGallery/titleGallery.js"></script>
   <script src="/bookingFiles/booking.js"></script>
   <script src="/listingDescriptionFiles/listingDescription.js"></script>
   <script src="/reviewsFiles/reviews.js"></script>
